@@ -18,8 +18,4 @@ COPY . /var/www/html/
 # Set working directory
 WORKDIR /var/www/html/
 
-# Install Composer
-COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
-RUN composer install
-
 EXPOSE 80
