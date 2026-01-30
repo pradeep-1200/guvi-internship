@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | AccountPortal</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/register.js" defer></script>
+</head>
+<body>
+
+    <div class="auth-wrapper mt-5 mb-5">
+        <div class="auth-card" style="max-width: 600px;">
+            
+            <div class="auth-header">
+                <div class="d-flex justify-content-center mb-3">
+                    <svg class="text-primary" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                </div>
+                <h2 class="text-center h4">Create an Account</h2>
+                <p class="text-center text-muted small">Enter your details to register</p>
+            </div>
+
+            <div class="auth-body">
+                
+                <div id="alertPlaceholder"></div>
+
+                <div class="row g-3">
+                    <!-- Account Details -->
+                    <div class="col-12">
+                        <h6 class="text-muted border-bottom pb-2">Account Login</h6>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="name" class="form-label">Full Name</label>
+                        <div class="input-group">
+                            <span class="input-group-text">@</span>
+                            <input type="text" id="name" class="form-control" placeholder="John Doe">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email</label>
+                        <div class="input-group">
+                            <span class="input-group-text">@</span>
+                            <input type="email" id="email" class="form-control" placeholder="name@example.com">
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="password" class="form-label">Password</label>
+                        <div class="input-group">
+                            <span class="input-group-text">#</span>
+                            <input type="password" id="password" class="form-control" placeholder="Strong password">
+                        </div>
+                    </div>
+
+                    <!-- Profile Details -->
+                    <div class="col-12 mt-4">
+                        <h6 class="text-muted border-bottom pb-2">Profile Details</h6>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="age" class="form-label">Age</label>
+                        <input type="number" id="age" class="form-control" placeholder="18">
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="dob" class="form-label">Date of Birth</label>
+                        <input type="date" id="dob" class="form-control">
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="contact" class="form-label">Contact</label>
+                        <input type="text" id="contact" class="form-control" placeholder="+91 9999999999">
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <button class="btn btn-primary w-100" id="registerBtn">
+                        <span>Sign Up</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </button>
+                </div>
+
+                <div class="text-center mt-3">
+                    <p class="small text-muted mb-0">Already have an account? <a href="login.html" class="text-link">Log in</a></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
